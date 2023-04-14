@@ -73,6 +73,7 @@
     text-align: center;
 }
 .watch-card{
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -105,10 +106,44 @@
     border-width: 2px 2px 2px 2px;
     border-radius: 5px 5px 5px 5px;
     padding: 15px 30px 15px 30px;
-    
+    line-height: 1;
+    cursor: pointer;
+    font-family: "Poppins", Sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card-body:hover a{
+color: #0F4C75;
+background-color: #FFFFFF;
+border:1.5px solid #0F4C75;
 
 }
 .pagination{
     display: flex;
     justify-content: center;
+}
+.card-body p{
+       padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+.card{
+        width: 18rem;
+    height: 32rem;
+}
+.card-body .discounted-price{
+    color: #3282BF;
+    font-weight: bold;
+      font-family: "Poppins", Sans-serif;
+text-decoration: underline;
+}
+.card-body .badge{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: #d72121;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
 }
