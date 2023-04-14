@@ -1,0 +1,248 @@
+*{
+  padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'MyCustomFont'; /* Fontun adını belirleyin */
+  src: url('../fonts/Roboto-Bold.ttf') format('woff2'); /* Font dosyasının yolu ve uzantısını belirleyin */
+ }
+
+ a{
+  font-family: 'MyCustomFont';
+ }
+/* form starting stylings ------------------------------- */
+.group 			  { 
+    position:relative; 
+    width: 40%;
+    flex-wrap:wrap;
+  }
+ 
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    background-color: #F3F3F3;;
+    width:300px;
+    border:none;
+    border-radius: 5%;
+    border-bottom:4px solid  #0F4C75;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label
+  {
+    font-family: "Poppins", Sans-serif;
+    padding: 4px 8px;
+    color:#999; 
+    font-size:21px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:300px; }
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  /* .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+   */
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+  }
+  .contact-page-info{
+    background-image: url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
+    background-position: center;
+    
+}
+.our-info
+{
+  margin:4rem 0 auto;
+align-items: center;
+}
+.our-info p
+{
+  color:#6E6E6E;
+}
+.get-in-touch .title h5
+{
+  color: #2f78a7;
+  letter-spacing: 2px;
+}
+.our-info i{
+font-size: 52px;
+color: #1B8AD0;
+align-items: center;
+}
+.our-info span
+{
+  display: block;
+  align-items: center;
+}
+.contact-info
+{
+  margin:4rem 0;
+}
+ .contact-bread-crump{
+    width: 30%;
+    padding: 7rem 0;
+    align-items: center;
+ }
+ .contact-bread-crump a{
+    color: #2f78a7;
+ }
+ .contact-bread-crump h1{
+   font-weight: bold;
+   font-size: 65px;
+}
+.contact-info .map-iframe{
+  height: 350px;
+  
+}
+.our-phone, .our-office, .our-contact
+{
+  padding: 25px 25px 25px 25px;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #3282B8;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.15);
+  height: 230px;
+}
+/* iconda m-auto islemir */
+/* OUR-INFO"s icon */
+.our-contact i{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 75px;
+}
+.our-office i{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 75px;
+}
+.our-phone i{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 75px;
+}
+.our-phone span,p{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.our-office span,p{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.our-info span,p{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.tel{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 56%;
+}
+.address{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 76%;
+}
+.get-in-touch .title{
+  margin: 5rem auto;
+  text-align: center;
+  width: 50%;
+}
+.get-in-touch .title h2{
+  color: #1B262C;
+  font-weight: bold;
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+}
+.get-in-touch .title h2::before{
+  content: '';
+  width: 65%;
+  height: 20px;
+  background-color:#3282B8 ;
+  bottom: 6px;
+  left: 8rem;
+  display: block;
+  position: absolute;
+  z-index: -10000000;
+
+}
+.get-in-touch .title h5{
+  color: #3282B8;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+}

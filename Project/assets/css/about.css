@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-page-info{
+    background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
+    background-position: center;
+    text-align: center;
+}
+.about-bread-crump{
+    width: 30%;
+    padding: 7rem 1.5rem 0;
+    text-align: center;
+ }
+ .about-bread-crump a{
+    color: #2f78a7;
+
+ }
+ .about-page-info h1{
+   font-weight: bold;
+   font-size: 65px;
+   width: 45%;
+    margin: 0 auto;
+    padding: 0 0 7rem 0rem;
+}
