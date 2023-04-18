@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
+input
+{
+    width: 9%;
+    padding: 10px;
+    margin: 3px 2rem 21px 0px;
+}
 .shop-page-info{
     background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
     background-position: center;
@@ -24,4 +32,68 @@
    width: 45%;
     margin: 0 auto;
     padding: 0 0 7rem 0rem;
+}
+
+
+/*  QUICK VIEW STYLE  */
+.quick-view{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+.quick-view-info{
+  width: 51%;
+  position: relative;
+  z-index: 1000000;
+}
+
+.quick-view-info  h2{
+    color: #1B262C;
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+}
+.quick-view-info p{
+    line-height: 1.5em;
+  color: #6E6E6E;
+  font-family: "Poppins", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 2rem auto;
+}
+
+.quick-view-info .add-to-cart{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  background-color: #0F4C75;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+  border-width: 2px 2px 2px 2px;
+  border: solid;
+  border-color: #0F4C75;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+}
+.quick-view-info .add-to-cart:hover{
+  color: #0F4C75;
+  background-color: white;
+  border-color: #0F4C75;
+}
+.quick-view-info .discounted-price{
+    color: #3282BF;
+    font-weight: bold;
+     font-family: "Poppins", Sans-serif;
+     font-size: 29px;
+     text-decoration: underline;
+}
+.quick-view del{
+    color: #6E6E6E;
+    font-size: 20px;
+
 }
