@@ -27,6 +27,7 @@
 }
 #who-we-are .info-about-us .img-us{
   
+transition: 0.3s;
    width: 608px;
    margin: 10rem 0;
     border-style: solid;
@@ -39,7 +40,6 @@
 .info-about-us .img-us img{
     width: 590px;
     height: 701px;  
-transition: 0.3s;
 }
 #who-we-are .info-about-us{
     
@@ -72,7 +72,7 @@ transition: 0.3s;
     height: 189px;
   
 }
-.info-about-us .img-us:hover img{
+.info-about-us .img-us:hover {
     transform: scale(1.1);
 }
 .info-about-us .info-us{
