@@ -5,12 +5,13 @@
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 input
 {
     width: 9%;
     padding: 10px;
-    margin: 3px 2rem 21px 0px;
+    margin: 3px 13px 7px 0px;
 }
 .shop-page-info{
     background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
@@ -33,17 +34,22 @@ input
     margin: 0 auto;
     padding: 0 0 7rem 0rem;
 }
-
+.breadcrumb{
+      background-color: white;
+    margin: 2rem auto 8px;
+}
 
 /*  QUICK VIEW STYLE  */
 .quick-view{
     display: flex; 
     justify-content: space-between;
+        margin: 3rem a
 }
 
 
 .quick-view-info{
-  width: 51%;
+  width: 48%;
+      padding-left: 7px;
   position: relative;
   z-index: 1000000;
 }
@@ -96,4 +102,31 @@ input
     color: #6E6E6E;
     font-size: 20px;
 
+}
+.quick-view p:last-child{
+      font-weight: 700;
+          color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+}
+.quick-view a:last-child{
+  font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #3282BF;
+}
+.quick-view-img{
+  max-width: 650px;
+  max-height: 650px;
+    padding-right: 5px;
+}
+#lens{
+  height: 160px;
+  width: 160px;
+border: 1px solid #6E6E6E;
+}
+
+.quick-view-img img{
+  width: 100%;
 }

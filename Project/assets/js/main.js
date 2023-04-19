@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('.video-player').show();
   });
 
-  
+ 
 // Scroll olayı dinleyicisi
 // $("#image-container").scroll(function() {
 //   // Resim öğelerinin opacity değerini artırmak için loop ile döngü başlatıyoruz
