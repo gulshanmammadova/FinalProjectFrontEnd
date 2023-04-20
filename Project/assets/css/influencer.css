@@ -133,10 +133,19 @@ padding: 25px 25px 25px 25px;
 }
 
 
-.image{
-    opacity: 1;
-    transition:opacity 0.5s ease-in-out;
+/* .image-container img{
+    position: relative;
 }
+.image-container img::after{
+content: ' ';
+background-color: #2f78a7;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+position: absolute;
+z-index: 1000;
+} */
 
 /* .photos .image-container img::after{
     content: "";

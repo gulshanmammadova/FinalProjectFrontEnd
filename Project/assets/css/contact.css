@@ -6,8 +6,8 @@ box-sizing: border-box;
 
 /* Fonts */
 @font-face {
-  font-family: 'MyCustomFont'; /* Fontun adını belirleyin */
-  src: url('../fonts/Roboto-Bold.ttf') format('woff2'); /* Font dosyasının yolu ve uzantısını belirleyin */
+  font-family: 'MyCustomFont'; 
+  src: url('../fonts/Roboto-Bold.ttf') format('woff2'); 
  }
 
  a{
@@ -45,9 +45,10 @@ box-sizing: border-box;
     left:5px;
     top:10px;
     
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
+   
+  }
+  .foorms{
+    margin: 1px 77px;
   }
   textarea ~ label{
     font-family: "Poppins", Sans-serif;
@@ -60,6 +61,10 @@ box-sizing: border-box;
     left:5px;
     top:10px;
   }
+  .form-group{
+    position: relative;
+    width: 94%;
+  }
   textarea {
     padding-left: 13px;
     margin-top: 8px;
@@ -67,43 +72,12 @@ box-sizing: border-box;
     background-color: #F3F3F3;
     border-color: #0F4C75;
     border-width: 0px 0px 5px 0px;
-    width: 119%;
+    width: 100%;
   }
   
-  textarea:focus~ label{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
-  /* active state */
-  input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
-  
-  /* BOTTOM BARS ================================= */
-  .bar 	{ position:relative; display:block; width:300px; }
-  .bar:before, .bar:after 	{
-    content:'';
-    height:2px; 
-    width:0;
-    bottom:1px; 
-    position:absolute;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  .bar:before {
-    left:50%;
-  }
-  .bar:after {
-    right:50%; 
-  }
-  
-  /* active state */
-  input:focus ~ .bar:before, input:focus ~ .bar:after {
-    width:50%;
+ 
+  textarea:focus{
+    outline: none;
   }
   
 form button{
@@ -122,7 +96,7 @@ border-color: #0F4C75;
 border-radius: 5px 5px 5px 5px;
 padding: 15px 30px 15px 30px;
 transition: 0.3s;
-margin-left: 0 auto;
+margin-left:10px;
   }
   form button:hover{
     color:#0F4C75 ;
@@ -141,14 +115,14 @@ margin-left: 0 auto;
   }
    */
   /* active state */
-  input:focus ~ .highlight {
+  /* input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
   }
-  
+   */
   /* ANIMATIONS ================ */
-  @-webkit-keyframes inputHighlighter {
+  /* @-webkit-keyframes inputHighlighter {
       from { background:#5264AE; }
     to 	{ width:0; background:transparent; }
   }
@@ -159,7 +133,7 @@ margin-left: 0 auto;
   @keyframes inputHighlighter {
       from { background:#5264AE; }
     to 	{ width:0; background:transparent; }
-  }
+  } */
   .contact-page-info{
     background-image: url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
     background-position: center;

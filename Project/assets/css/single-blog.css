@@ -96,7 +96,7 @@
     justify-content: flex-start;
     align-items: center;
 }
-.next-prev-blog  .previous i{
+.next-prev-blog  .previous i, .next i{
     color: #1B262C;
     font-size: 30px;
 }
