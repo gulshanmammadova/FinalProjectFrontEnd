@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="/assets/css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -49,17 +48,37 @@
           <li class="nav-item mx-auto">
             <a class="nav-link text-light mx-2" href="influencer-gallery.html">INFLUENCER GALLERY</a>
           </li>
-          <li class="nav-item m-auto">
+          <li class="nav-item m-auto account-dd" onclick="Dropdown()">
             <i class="fa-regular fa-user mx-2"  style="color: #ffffff;"></i>
+            <div class="dropdown-content d-none">
+              <ul>
+                <li>
+                  <a href="my-account.html">My Account</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+              </ul>
+          </div>
           </li>
-<li class="nav-item m-auto py-2">
-  <i class="fa-solid fa-basket-shopping mx-2" style="color: #ffffff;"></i>
+          
+<li class="nav-item m-auto py-2 ">
+  <i class="fa-solid fa-basket-shopping mx-2" style="color: #ffffff;" onclick="SettingDropdown()"></i>
+  
 </li>           
       </ul>
     </div>
   </nav>
 </div>
     </header>
+    <!-- End of Header Section -->
+
+
+
+
     <!-- End of Header Section -->
 
     <!-- Main Section -->

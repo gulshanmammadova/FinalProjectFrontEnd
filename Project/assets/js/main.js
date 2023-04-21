@@ -6,11 +6,11 @@
 //     console.log('animated out', detail);
 //   });
 //   Contactdaki fade-in animasiyasi
-$(document).ready(function() {
-  $('.play-button').on('click', function() {
-    $(this).hide();
-    $('.video-player').show();
-  });
+// $(document).ready(function() {
+//   $('.play-button').on('click', function() {
+//     $(this).hide();
+//     $('.video-player').show();
+//   });
 
  
 // Scroll olayı dinleyicisi
@@ -23,4 +23,10 @@ $(document).ready(function() {
 //   });
 // });
   
-});
+// });
+
+// ACCOUNT LOGIN REGISTER     
+// DROPDOVNU
+function Dropdown() {
+  document.querySelector(".account-dd .dropdown-content").classList.toggle("d-none");
+}
