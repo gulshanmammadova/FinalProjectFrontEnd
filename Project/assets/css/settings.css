@@ -95,3 +95,91 @@
    color: #3282B8;
    margin-left: 5px;
 }
+.account-type{
+    margin: 4rem auto;
+    width: 30%;
+}
+.account-type li{
+    border: 0.5px solid ;
+    border-color: #979b9d;
+}
+.account-type li i{
+    color: #3282B8;
+     margin: 7px 9px;
+}
+.account-type  span{
+    color: #1B262C;
+    opacity: 0.9;
+}
+.account{
+    display: flex;
+    justify-content: space-between;
+}
+.account-content{
+    width: 60%;
+    margin: 4rem auto;
+      border: 1px solid ;
+    border-color: #979b9d;
+}
+
+.account-content  .dashboard-content p{
+        opacity: 0.9;
+    font-weight: 400;
+    font-size: 19px;
+    font-family: "Poppins", Sans-serif;
+   
+    padding: 14px;
+
+}
+.dashboard-content span{
+    color: #3282B8;
+}
+
+.account-type{
+    flex-direction: column;
+    display: inline-block;
+  position: relative;
+  }
+  .account-type ul{
+    background-color: white;
+  }
+ 
+  .account-type li:hover {
+    background-color: #1B262C;
+    box-shadow: 0px 0px 10px 3px #e0cece;
+  }
+  
+  .account-type li:hover span{
+    color: #FFFFFF;
+  }
+  .active{
+    background-color: #1B262C;
+    box-shadow: 0px 0px 10px 3px #e0cece;
+   
+  }
+  .active span{
+    color: white;
+  }
+  .table tr {
+    cursor: pointer;
+}
+.hiddenRow {
+    padding: 0 4px !important;
+    background-color: #eeeeee;
+    font-size: 13px;
+}
+.address i{
+    color: #3282B8;
+    margin: 0 5px;
+}
+.address-card{
+    display: flex;
+    justify-content: space-between;
+}
+.address-card .card{
+    width: 32%;
+    height: 16rem;
+}
+.address-card .card p{
+    padding: 1px 0 !important;
+}

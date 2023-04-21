@@ -29,4 +29,10 @@
 // DROPDOVNU
 function Dropdown() {
   document.querySelector(".account-dd .dropdown-content").classList.toggle("d-none");
+
 }
+// Toggle Table
+$(".accordian-body").on("show.bs.collapse", function () {
+  $(this).closest("table").find(".collapse.in").not(this);
+  //.collapse('toggle')
+});
