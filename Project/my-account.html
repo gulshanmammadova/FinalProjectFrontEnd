@@ -92,12 +92,12 @@
             </ul>
           </div>
           <div class="account-content">
-            <div class="dashboard-content d-none">
+            <div class="dashboard-content container content-container d-none">
               <p>Hello <span> Gulshan Mammadova !</span>
                 From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.
               </p>
             </div>
-            <div class="order-content d-none ">
+            <div class="order-content container content-container d-none ">
               <table class="table table-condensed" style="border-collapse:collapse;">
                 <thead>
                     <tr>
@@ -169,7 +169,7 @@
                 </tbody>
             </table>
             </div>
-            <div class="address d-none">
+            <div class="address container content-container d-none">
               <div class="address-info mx-2 py-2">
                 <h3 class="px-2">Billing Info</h3>
                 <hr>
@@ -205,22 +205,22 @@
 
               </div>
             </div>
-            <div class="detail-content container">
-              <form action="">
+            <div class="detail-content content-container container">
+              <form action="" >
                 
                   <h2 class="py-2">Account Details</h2>
                   <hr>
                    <!--  Name inputs -->
-         <div class="form-outline mb-4">
+         <div class="form-outline mb-4 w-45">
           <input type="text" id="form2Example1" class="form-control" />
           <label class="form-label" for="form2Example1">First Name</label>
         </div>
-        <div class="form-outline mb-4">
+        <div class="form-outline mb-4 w-45 m-60">
           <input type="text" id="form2Example1" class="form-control" />
           <label class="form-label" for="form2Example2">Last Name</label>
         </div>
          <!-- Email input -->
-         <div class="form-outline mb-4">
+         <div class="form-outline mb-4 ">
            <input type="email" id="form2Example1" class="form-control" />
            <label class="form-label" for="form2Example3">Email address</label>
          </div>
@@ -231,6 +231,26 @@
       </div>
       <h2 class="py-2">Password</h2>
                   <hr>
+                  
+            <!-- Password input -->
+            <div class="form-outline mb-4 ">
+              <input type="password" id="form2Example6" class="form-control" />
+              <label class="form-label" for="form2Example7">Old Password</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4 w-45">
+              <input type="password" id="form2Example7" class="form-control" />
+              <label class="form-label" for="form2Example8">New Password</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4 w-45 m-60">
+              <input type="password" id="form2Example8" class="form-control" />
+              <label class="form-label" for="form2Example9">Confirm Password</label>
+            </div>
+            <button class="my-4">Save Changes</button>
+          
               </form>
             </div>
           </div>
