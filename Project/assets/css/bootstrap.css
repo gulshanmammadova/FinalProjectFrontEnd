@@ -10902,5 +10902,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
+.login-register {
+  width: 500px;
+  margin: 4rem auto;
+}
 /*# sourceMappingURL=bootstrap.css.map */
