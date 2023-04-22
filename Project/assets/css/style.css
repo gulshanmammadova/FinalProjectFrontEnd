@@ -970,6 +970,7 @@ position: relative;
   margin-top: 8px;
   width: 133px;
 }
+
 .account-dd li {
   margin: 0 auto;
   padding: 3px 12px;
@@ -987,8 +988,123 @@ transition: 0.5s;
 .account-dd li:hover a{
   color: #FFFFFF;
 }
+.account-dd:hover .dropdown-content{
+  display: block !important;
+}
+.basket {
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
 
+.basket-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+.basket-icon i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.item-count {
+  position: absolute;
+  top: 13px;
+  right: -2px;
+  width: 17px;
+  height: 17px;
+  background-color: red;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-content {
+  position: absolute;
+  top: 99%;
+  right: -78px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 373px;
+  height: auto;
+  display: none;
+  z-index: 9998;
+  transition: 0.5s ease-out;
+
+}
+.basket-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 1px;
+}
+.basket-content ul li span {
+font-size: 14px;
+font-family: "Poppins", Sans-serif;
+  font-weight: 400;
+  line-height: 1.3em;
+
+}
+.basket-content  .price{
+  width: 40%;
+}
+.basket-content .basket-prod-img{
+  width: 149px;
+  border: 1px solid #fbebeb;
+  height: 125px;
+}
+.basket .basket-content .basket-prod-img img{
+  width: 100%;
+}
+.single-price{
+  color: #0F4C75;
+}
+.close-div{top: 1px;
+  right: 2px;
+  position: absolute;
+  right: -33px;
+  background-color: #0F4C75;
+  color: white;
+}
+.basket-content  .basket-setting a{
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  background-color: #0F4C75;
+  padding: 9px 15px;
+  transition: 0.3s;
+  width: 60%;
+text-align: center;
+  display: block;
+  margin: 10px auto;
+
+}
+.basket-content .basket-setting a:hover{
+  background-color: #ffffff;
+  color: #0F4C75;
+}
+.basket-setting .basket-price .setting{
+  color: #0F4C75;
+}
+.basket-setting .basket-price .sub, .all{
+  display: flex;
+  justify-content: space-between;
+}
+.basket-setting .basket-price{
+  margin: 3rem 0;
+}
+.basket-setting .basket-price span{
+  color: #6E6E6E;
+}
 
 
 
@@ -997,6 +1113,9 @@ transition: 0.5s;
       nav  .collapse.navbar-collapse{
         display: flex;
         justify-content: end;
+      }
+      .navbar-expand-lg .navbar-nav {
+        align-items: center;
       }
 .group{
   width: 35%;

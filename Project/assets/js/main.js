@@ -1,38 +1,26 @@
-// document.addEventListener('aos:in', ({ detail }) => {
-//     console.log('animated in', detail);
-//   });
-  
-//   document.addEventListener('aos:out', ({ detail }) => {
-//     console.log('animated out', detail);
-//   });
-//   Contactdaki fade-in animasiyasi
-// $(document).ready(function() {
-//   $('.play-button').on('click', function() {
-//     $(this).hide();
-//     $('.video-player').show();
-//   });
 
- 
-// Scroll olayı dinleyicisi
-// $("#image-container").scroll(function() {
-//   // Resim öğelerinin opacity değerini artırmak için loop ile döngü başlatıyoruz
-//   $(".image-container img").each(function() {
-//     var imgOpacity = $(this).css("opacity"); // Mevcut opacity değerini alıyoruz
-//     var newOpacity = parseFloat(imgOpacity) + 0.1; // Mevcut değeri 0.1 artırıyoruz
-//     $(this).css("opacity", newOpacity); // Yeni opacity değerini atıyoruz
-//   });
-// });
-  
-// });
-
-// ACCOUNT LOGIN REGISTER     
-// DROPDOVNU
-function Dropdown() {
-  document.querySelector(".account-dd .dropdown-content").classList.toggle("d-none");
-
-}
 // Toggle Table
 $(".accordian-body").on("show.bs.collapse", function () {
   $(this).closest("table").find(".collapse.in").not(this);
-  //.collapse('toggle')
+});
+// My-Acoount 
+$(document).ready(function() {
+  
+  $(".account-type > ul > li").click(function() {
+     $(".account-type > ul > li").removeClass("active");
+    $(this).addClass("active");
+
+    var index = $(this).index();
+    $(".account-content > div").addClass("d-none");
+    $(".account-content > div:eq(" + index + ")").removeClass("d-none");
+  });
+});
+$(document).ready(function() {
+  
+  $(".basket .basket-icon").click(function() {
+    $(".basket-content").toggle("d-block");
+    $(".basket-content .close-div").click(function(){
+      $(".basket-content").css({"display":"none"});
+    })
+  });
 });

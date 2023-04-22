@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/settings.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/settings.css">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
@@ -50,7 +50,7 @@
           </li>
           <li class="nav-item m-auto account-dd" onclick="Dropdown()">
             <i class="fa-regular fa-user mx-2"  style="color: #ffffff;"></i>
-            <div class="dropdown-content d-none">
+            <div class="dropdown-content d-none ">
               <ul>
                 <li>
                   <a href="my-account.html">My Account</a>
@@ -65,9 +65,58 @@
           </div>
           </li>
           
-<li class="nav-item m-auto py-2 ">
-  <i class="fa-solid fa-basket-shopping mx-2" style="color: #ffffff;" onclick="SettingDropdown()"></i>
-  
+<li class="nav-item m-auto py-2 basket" >
+  <div class="basket">
+    <div class="basket-icon">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <span class="item-count">0</span>
+    </div>
+    
+
+  <div class="basket-content container ">
+    <i class="fa-solid fa-x close-div"></i>
+  <div class="basket-ul">
+    <ul>
+      <li>
+        <div class="basket-prod-img">
+          <img src="/assets/img/product/classicwatch.jpg" alt="">
+        </div>
+        <div class="price"><span>Gold Hand Watch</span>
+          <span><span class="single-price">1*100</span>$</span>
+        </div>
+        <div class="delete-icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+      </li>
+      <li>
+        <div class="basket-prod-img">
+          <img src="/assets/img/product/hand-watch-isolated.jpg" alt="">
+        </div>
+        <div class="price mx-2"><span >New Hand Watch</span>
+          <span><span class="single-price">1*100</span>$</span>
+        </div>
+        <div class="delete-icon">
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+      </li>
+    
+    </ul>
+   
+  </div>
+  <div class="basket-setting">
+    <hr>
+    <div class="basket-price">
+    <div class="sub">  <span class="setting">SubTotal:</span> <span>1000$</span></div>
+    <div class="all">  <span class="setting">Total:</span> <span>1400$</span></div>
+
+    </div>
+    <a href="checkout.html">Check Out</a>
+    <a href="cart.html"> Go Cart</a>
+  </div>
+  </div>
+</div>
 </li>           
       </ul>
     </div>
@@ -75,8 +124,17 @@
 </div>
     </header>
     <!-- End of Header Section -->
-    <!-- End of Header Section -->
-    <main>
+
+
+
+
+    <!-- Main Section -->
+<main>
+
+
+
+
+
 
 
 
@@ -84,20 +142,20 @@
         <div class="account container">
           <div class="account-type">
             <ul>
-              <li class="dashboard "><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></li>
-              <li class="order "><i class="fa-solid fa-basket-shopping"></i><span>Order</span></li>
-              <li class="address"><i class="fa-solid fa-location-dot"></i><span>Address</span></li>
-<li class="detail"><i class="fa-solid fa-user"></i><span>Account Detail</span></li>
-<li class="logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></li>
+              <li data-target="div1" class="dashboard active"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></li>
+              <li data-target="div2" class="order "><i class="fa-solid fa-basket-shopping"></i><span>Order</span></li>
+              <li data-target="div3" class="address"><i class="fa-solid fa-location-dot"></i><span>Address</span></li>
+<li data-target="div4" class="detail"><i class="fa-solid fa-user"></i><span>Account Detail</span></li>
+<li data-target="div5" class="logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></li>
             </ul>
           </div>
           <div class="account-content">
-            <div class="dashboard-content container content-container d-none">
+            <div class="dashboard-content container content-container div1 ">
               <p>Hello <span> Gulshan Mammadova !</span>
                 From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.
               </p>
             </div>
-            <div class="order-content container content-container d-none ">
+            <div class="order-content container content-container d-none div2">
               <table class="table table-condensed" style="border-collapse:collapse;">
                 <thead>
                     <tr>
@@ -169,7 +227,7 @@
                 </tbody>
             </table>
             </div>
-            <div class="address container content-container d-none">
+            <div class="address container content-container d-none div3">
               <div class="address-info mx-2 py-2">
                 <h3 class="px-2">Billing Info</h3>
                 <hr>
@@ -205,7 +263,7 @@
 
               </div>
             </div>
-            <div class="detail-content content-container container">
+            <div class="detail-content content-container container d-none div4">
               <form action="" >
                 
                   <h2 class="py-2">Account Details</h2>
