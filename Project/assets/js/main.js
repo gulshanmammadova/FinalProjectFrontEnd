@@ -52,3 +52,10 @@ $('.slider').slick({
   autoplaySpeed: 3000,
   arrows:false,
 });
+
+$('.feedback-slider ').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows:false
+});

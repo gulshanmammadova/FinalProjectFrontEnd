@@ -10,7 +10,7 @@ box-sizing: border-box;
   src: url('../fonts/Roboto-Bold.ttf') format('woff2'); 
  }
 
- a{
+ header a{
   font-family: 'MyCustomFont';
  }
 /* form starting stylings ------------------------------- */
@@ -74,7 +74,9 @@ box-sizing: border-box;
     border-width: 0px 0px 5px 0px;
     width: 100%;
   }
-  
+  form{
+    width: 79%;
+  }
  
   textarea:focus{
     outline: none;

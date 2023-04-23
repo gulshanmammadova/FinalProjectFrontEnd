@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+/* Fonts */
+@font-face {
+  font-family: 'MyCustomFont'; 
+  src: url('../fonts/Roboto-Bold.ttf') format('woff2'); 
+ }
+
+ header a{
+  font-family: 'MyCustomFont';
+ }
+ 
 a{
     text-decoration: none;
 }
@@ -1275,16 +1285,113 @@ text-align: center;
 }
 .feedback-slider h6{
   font-size: 1.3em;
+  padding: 6px;
   font-style: italic;
   line-height: 1.5;
   color: #6E6E6E;
   font-family: "Poppins", Sans-serif;
 }
 .feedback-slider .slider-item img {
-  position: absolute;
   bottom: -1rem;
   left: 1.6rem;
   border-radius: 50%;
   width: 55px;
   height: 55px;
+}
+.commenter{
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+}
+.feedback-slider p{
+  padding: 1px 0 0 5px ;
+  line-height: 2px;
+}
+.slider-item .info{
+  background-color: #fff7f7;
+  z-index: -2;
+
+}
+.sale-all{
+  margin: 2rem auto;
+}
+.daily-sale-img{
+  width: 50%;
+}
+.daily-sale-img img{
+  width: 100%;
+  border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #FFFFFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 3%;
+    
+}
+.sale-name{
+  position: relative;
+}
+.sale-timer{
+  width: 48%;
+}
+.sale-all{
+  display:flex;
+  justify-content: space-between;
+}
+.sale-name::before{
+  content: 'o';
+  color: #2f78a7;
+  opacity: 0.2;
+  top: -71px;
+  left: 15px;
+  position: absolute;
+  z-index: -2;
+  font-size: 254px;
+  font-weight: bold;
+
+}
+.sale-all .sale-name h5{
+  font-family: "Poppins", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  letter-spacing: 1.5px;
+  color: #000000;
+  padding: 2rem 0;
+}
+.shop-now a{
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+ 
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+  border-width: 2px 2px 2px 2px;
+  border: solid;
+
+  background-color: #0F4C75;
+  color: white;
+  border-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+}
+
+.shop-now a:hover{
+  background-color: #FFFFFF;
+  color: #0F4C75;
+  border-color: #0F4C75;
+}
+.sale-timer span{
+  font-size:40px ;
+}
+.sale-timer .timer{
+  display: flex;
+  justify-content: space-between;
+}
+.sale-timer .timer div{
+  background-color: #D72121;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5px 20px 5px 20px;
+  color: white;
 }
