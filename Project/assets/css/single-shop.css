@@ -122,11 +122,6 @@ input
   max-height: 650px;
     padding-right: 5px;
 }
-#lens{
-  height: 160px;
-  width: 160px;
-border: 1px solid #6E6E6E;
-}
 
 .quick-view-img img{
   width: 100%;

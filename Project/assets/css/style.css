@@ -1314,18 +1314,12 @@ text-align: center;
 }
 .sale-all{
   margin: 2rem auto;
+  align-items: center;
 }
-.daily-sale-img{
-  width: 50%;
-}
+
 .daily-sale-img img{
   width: 100%;
-  border-style: solid;
-    border-width: 10px 10px 10px 10px;
-    border-color: #FFFFFF;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 3%;
-    
+   
 }
 .sale-name{
   position: relative;
@@ -1341,8 +1335,8 @@ text-align: center;
   content: 'o';
   color: #2f78a7;
   opacity: 0.2;
-  top: -71px;
-  left: 15px;
+  top: -142px;
+  left: 36px;
   position: absolute;
   z-index: -2;
   font-size: 254px;
@@ -1383,7 +1377,8 @@ text-align: center;
   border-color: #0F4C75;
 }
 .sale-timer span{
-  font-size:40px ;
+  line-height: 35px;
+  font-size:30px ;
 }
 .sale-timer .timer{
   display: flex;
@@ -1394,4 +1389,29 @@ text-align: center;
   border-radius: 5px 5px 5px 5px;
   padding: 5px 20px 5px 20px;
   color: white;
+  width: 118px;
+  text-align: center;
+  height: 70px;
+}
+
+
+.daily-sale-img{
+  position: relative;
+  width: 50%;
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: #FFFFFF;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 3%;
+
+}
+.daily-sale-img::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5; 
 }

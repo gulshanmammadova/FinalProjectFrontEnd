@@ -59,3 +59,22 @@ $('.feedback-slider ').slick({
   autoplaySpeed: 3000,
   arrows:false
 });
+// Timer
+$(document).ready(function(){
+  var countDownDate = new Date("May 16, 2023 00:23:59").getTime(); // hedef tarihi ayarla
+  var x = setInterval(function() {
+    var now = new Date().getTime(); 
+    var distance = countDownDate - now;
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    $(".days").html(days);
+    $(".hours").html(hours);
+    $(".minutes").html(minutes);
+    $(".seconds").html(seconds);
+    if (distance < 0) {
+      clearInterval(x);
+    $('.timer').addClass('d-none')    }
+  }, 1000);
+});
