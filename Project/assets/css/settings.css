@@ -187,13 +187,7 @@
 .address-card .card p{
     padding: 1px 0 !important;
 }
-.w-45{
-    display: inline-block;
-    width: 45%;
-}
-.m-60{
-    margin-left: 60px;
-}
+
 .detail-content  button{
     width: 100%;
     color: #fff;
@@ -206,4 +200,7 @@
     color: #1B262C;
     border-color:#1B262C ;
     background-color: #fff;
+}
+.register-info{
+    margin-bottom: -3rem !important;
 }

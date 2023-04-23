@@ -10907,3 +10907,11 @@ textarea.form-control-lg {
   margin: 4rem auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.w-45{
+  display: inline-block;
+  width: 45%;
+}
+.m-60{
+  margin-left: 60px;
+}
