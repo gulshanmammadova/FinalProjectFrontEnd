@@ -98,5 +98,23 @@ background-color: #FFFFFF;
   .cart-table{
     overflow-y: scroll;
   }
+  .cart-table th:nth-child(2)
+  {
+    width: 100%;
+  }
+  .checkout-content .form-outline{
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .checkout-content{
+    display: block;
+  }
   
+  .checkout-content .checkout{
+    width: 100% !important;
+  }
+  .checkout-cart{
+    width: 100% !important;
+  }
 }

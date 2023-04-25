@@ -986,6 +986,8 @@ position: relative;
 .account-dd li {
   margin: 0 auto;
   padding: 3px 12px;
+  z-index: 99999;
+  height: fit-content;
   border: 0.1px solid #faefef;
 transition: 0.5s;
 }
@@ -1011,6 +1013,7 @@ transition: 0.5s;
 
 .basket-icon {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -1023,11 +1026,11 @@ transition: 0.5s;
 
 .item-count {
   position: absolute;
-  top: 13px;
-  right: -2px;
+  top: -2px;
+  right: -4px;
   width: 17px;
   height: 17px;
-  background-color: red;
+  background-color: #0F4C75;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;

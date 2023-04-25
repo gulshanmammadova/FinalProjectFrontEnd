@@ -171,3 +171,39 @@ z-index: 1000;
 .photos .image-container:hover img::after{
     opacity: 1;
 } */
+@media (max-width: 576px) {
+    .influencer-bread-crump{
+        position: sticky;
+        z-index: 9999;
+        width: 70%;
+    }
+    .influencer-page-info h1{
+        font-size: 35px;
+        width: 66%;
+    }
+    .influencer-bread-crump a{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .gallery-info h5{
+        font-size: 16px;
+    }
+    .gallery-info h2{
+        font-size: 30px;
+    }
+    .gallery-info{
+        width: 100%;
+    }
+    .people{
+        display: block  !important;
+    }
+    .people .influencer-photo{
+        width: 100%;
+        align-items: center;
+        margin: 48px auto;
+        height: 33rem;
+    }
+    .influencer-photo img{
+        object-fit: cover;
+    }
+}
