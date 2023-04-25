@@ -9,7 +9,9 @@
   font-family: 'MyCustomFont'; 
   src: url('../fonts/Roboto-Bold.ttf') format('woff2'); 
  }
-
+nav .basket{
+  z-index: 999999999999999999999999999999;
+}
  header a{
   font-family: 'MyCustomFont';
  }
@@ -1003,7 +1005,7 @@ transition: 0.5s;
 }
 .basket {
   align-items: center;
-  z-index: 9999;
+  z-index: 999999999999999999999999999999999999 !important;
   cursor: pointer;
 }
 
@@ -1274,8 +1276,8 @@ text-align: center;
     display: none;
 }
 .slider{
-  width: 80%;
-  bottom: 1rem;
+  width: auto;
+  bottom: 0rem;
   background-color: white;
   position: absolute;
   z-index: 999999999999999999999;
@@ -1298,6 +1300,14 @@ text-align: center;
   width: 55px;
   height: 55px;
 }
+.slider-content{
+  z-index: 1000000000000;
+  position: absolute;
+  bottom: -9rem;
+  left: 50%;
+  width: 104%;
+  transform: translateX(-50%);
+}
 .commenter{
   display: flex;
   align-items: center;
@@ -1313,13 +1323,25 @@ text-align: center;
 
 }
 .sale-all{
-  margin: 2rem auto;
+  margin: 7rem auto;
   align-items: center;
 }
+
 
 .daily-sale-img img{
   width: 100%;
    
+}
+.slider{
+  padding:0 0rem 0 8rem;
+}
+.slider .img-div{
+  width: 10%;
+  text-align: center;
+
+}
+.slider img{
+  width: 100px;
 }
 .sale-name{
   position: relative;
@@ -1414,4 +1436,23 @@ text-align: center;
   bottom: 0;
   background-color: black;
   opacity: 0.5; 
+}
+
+.home-video {
+  width: 100%;
+  top: -10px;
+  
+  width: fit-content;
+  position: relative;
+  object-fit: contain;
+      margin: -2rem 0 -2rem 0;
+}
+.only-index{
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  padding-top: 32px;
+  padding-bottom: 10px;
+
+  z-index: 1000000000;
 }

@@ -6,10 +6,19 @@ box-sizing: border-box;
 .influencer-page-info{
     background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
     background-position: center;
-    
+    position: relative;
+}
+.influencer-page-info::before{
+       position: absolute;
+content: ' ';
+top: 0;bottom: 0;right: 0;left: 0;
+background-color: black;
+opacity: 0.7;
+
 }
 .influencer-bread-crump{
     width: 30%;
+    position: sticky;
     padding: 7rem 1.5rem 0;
     align-items: center;
  }
@@ -19,6 +28,7 @@ box-sizing: border-box;
  .influencer-page-info h1{
    font-weight: bold;
    font-size: 65px;
+   position: sticky;
    width: 45%;
     margin: 0 auto;
     padding: 0 0 7rem 0rem;

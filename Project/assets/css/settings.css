@@ -204,3 +204,16 @@
 .register-info{
     margin-bottom: -3rem !important;
 }
+@media only screen and (max-width: 572px) 
+{
+    .account{
+        width: 100%;
+        display: block;
+    }
+    .account-type{
+        width: 100%;
+    }
+    .account-content{
+        width: 100%;
+    }
+}

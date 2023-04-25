@@ -46,8 +46,8 @@ $(document).ready(function() {
   
 $('.slider').slick({
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 2, 
+  slidesToShow: 4,
+  slidesToScroll: 4, 
    autoplay: true,
   autoplaySpeed: 3000,
   arrows:false,
@@ -77,4 +77,25 @@ $(document).ready(function(){
       clearInterval(x);
     $('.timer').addClass('d-none')    }
   }, 1000);
+});
+// ZOOM
+$(function(){
+$(".xzoom, .xzoom-gallery").xzoom({
+  zoomWidth:400,
+  tint:"#333",
+  Xoffset:15
+})
+});
+// REVIEWS AND DESCRIPTION
+$(document).ready(function() {
+  
+  $("#description-review .rev").click(function() {
+    $("#description-review .rev").addClass("active");
+    $("#description-review .desc").removeClass("active");
+    $("#description-review .description").addClass("d-none");
+
+    // $(".basket-content .close-div").click(function(){
+    //   $(".basket-content").css({"display":"none"});
+    // })
+  });
 });
