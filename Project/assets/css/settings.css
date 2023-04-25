@@ -204,7 +204,7 @@
 .register-info{
     margin-bottom: -3rem !important;
 }
-@media only screen and (max-width: 572px) 
+@media only screen and (max-width: 576px) 
 {
     .account{
         width: 100%;

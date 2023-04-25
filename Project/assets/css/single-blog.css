@@ -209,7 +209,7 @@
 }
 
 /* previous next bloga getmek olmur */
-@media only screen and (max-width: 572px) 
+@media only screen and (max-width: 576px) 
 {
     .blog-bread-crump{
         width: 50%;
@@ -228,6 +228,24 @@
    }
    .comment p{
     font-size: 16px;
+   }
+   .blog-text h2{
+    font-size: 21px;
+   }
+   .blog-big-description{
+    font-size: 17px;
+   }
+   .next-blog-info{
+    text-align: end;
+   }
+   .comment h2{
+    font-size: 43.4px;
+   }
+   .form-group{
+    padding:14px 0 ;
+   }
+  .comment .form-check{
+    padding-bottom: 3rem;
    }
    
 }

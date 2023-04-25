@@ -161,7 +161,7 @@ text-decoration: underline;
     line-height: 1.3em;
     letter-spacing: 1.5px;
 }
-@media only screen and (max-width: 572px) 
+@media only screen and (max-width: 576px) 
 {
     .shop-prod{
         display: block;
