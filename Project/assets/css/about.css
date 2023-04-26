@@ -44,18 +44,18 @@
 #who-we-are .info-about-us .img-us{
   
 transition: 0.3s;
-   width: 608px;
-   margin: 10rem 0;
-    border-style: solid;
-    border-width: 10px 10px 10px 10px;
-    border-color: #FFFFFF;
-    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
-    /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
-   border-radius: 1%;
+
  }
 .info-about-us .img-us img{
     width: 590px;
-    height: 701px;  
+    height: 701px;     width: 608px;
+    margin-top: 5rem ;
+     border-style: solid;
+     border-width: 10px 10px 10px 10px;
+     border-color: #FFFFFF;
+     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+     /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    border-radius: 1%;
 }
 #who-we-are .info-about-us{
     
@@ -428,16 +428,86 @@ padding: 4px  25px;
     }
     .info-about-us{
         display: block !important;
+        margin: 0rem auto;
     }
+   
     .info-about-us .img-us img {
-        width: 100%;
-        height: 701px;
+        width: 100% !important;
+        height: 596px !important;
     }
     #who-we-are .info-about-us::before {
-        top: -28px;
+        top: 60px;
     }
     #who-we-are .info-about-us::after {
-        bottom: 806px;
+        bottom: 724px;
+        left: 23rem;
     }
+    .info-us{
+        margin: 0 auto;
+    }
+    .info-us h2{
+        font-size: 29px !important;
+    }
+    p, span{
+        font-size: 20px !important;
+    }
+    #main-slogan .motto h1 {
+        font-size: 32px;
+    }
+    #main-slogan{
+        
+    margin: -8rem 0px;
+    }
+.our-teammate{
+    display: block;
 
+}
+.team{
+    display: block  !important ;
+}
+#our-team {
+    padding: 8rem 0;
+}
+ h2{
+    font-size: 29px !important;
+}
+.single-worker {
+    width: 100%;
+    margin-top: 4rem;
+}
+.team-info h2::before{
+    width: 55%;
+    height: 19px;
+    bottom: 6px;
+    left: 7.5rem;
+}
+.craft{
+    display: block !important;
+}
+.img-video{
+    width: 100% !important;
+    margin: 3rem auto;
+    height: 21rem;
+}
+.custom-info{
+    width: 100%;
+}
+.insta h1{
+        margin-bottom: -11px;
+    font-size: 30px !important;
+}
+#insta-address{
+    padding-bottom:6rem !important;
+}
+.insta a{
+    padding: 9px 4px 9px 4px !important;
+    font-size: 16px;
+}
+.random-image{
+display: flex;
+flex-wrap: wrap;
+}
+.random-image img{
+    width: 50% !important;
+}
 }
