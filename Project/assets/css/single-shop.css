@@ -233,4 +233,37 @@ height: 31rem;
 
 }
 
+@media (max-width: 576px) {
+  .shop-bread-crump{
+    width: 33%;
+  }
+.quick-view{
+  display: block;
+}
+.quick-view-info{
+  width: 100%;
+}
+.quick-view-info h2{
+  font-size: 41px;
+
+}
+.clearfix h2{
+  font-size: 32px;
+}
+.tab-pane p{
+  font-size: 17px;
+}
+.related-info h2
+{
+  font-size: 32px;
+}
+.related-card{
+  display: block;
+}
+.related-card .card {
+  width: 95%;
+  height: 41rem;
+}
+}
+
 
