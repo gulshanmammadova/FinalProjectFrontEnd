@@ -1418,7 +1418,10 @@ text-align: center;
   text-align: center;
   height: 70px;
 }
-
+.home-video 
+{
+  width: auto;
+}
 
 .daily-sale-img{
   position: relative;
@@ -1478,6 +1481,7 @@ text-align: center;
   }
   .best-choice{
     flex-direction: column-reverse;
+    display: block;
   }
   .best-choice .choice-info{
     width: 100%;
@@ -1517,5 +1521,66 @@ text-align: center;
   width: 100% !important;
 
 }
+.insta h1{
+  margin-bottom: -11px;
+font-size: 30px !important;
+}
+#insta-address{
+padding-bottom:6rem !important;
+}
+.insta a{
+padding: 9px 4px 9px 4px !important;
+font-size: 16px;
+}
+.random-image{
+display: flex;
+flex-wrap: wrap;
+}
+.random-image img{
+width: 50% !important;
+}
+.best-feedback{
+  flex-direction: column-reverse
+  ;
+}
+.feedback-video{
+  width: 100%;
+}
+.feedback-info{
+  width: 100%;
+}
+.feedback-info h2{
+  font-size: 35px;
+}
+.latest-prod-card{
+  flex-direction: column;
+}
+.latest-prod-card .card{
+    width: 96%;
+    height: 45rem;
+    text-align: center;
+}
+.card-body h5{
+  font-size: 25px;
+}
+.card-body p{
+  font-size: 22px;
+}
+.card-body a{
+  font-size:17px;
+}
+.latest-prod-info h2{
+  font-size: 35px;
+}
+.latest-prod-info h2::before {
+  content: '';
+  width: 67%;
+  left: 5.5rem;
+}
+
+
+
+
+
 
 }
