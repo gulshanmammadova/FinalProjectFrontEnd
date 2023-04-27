@@ -439,7 +439,7 @@ padding: 4px  25px;
         top: 60px;
     }
     #who-we-are .info-about-us::after {
-        bottom: 724px;
+        bottom: 601px;
         left: 23rem;
     }
     .info-us{
@@ -482,7 +482,7 @@ padding: 4px  25px;
     left: 7.5rem;
 }
 .craft{
-    display: block !important;
+flex-direction: column-reverse;
 }
 .img-video{
     width: 100% !important;

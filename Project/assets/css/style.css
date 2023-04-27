@@ -1463,4 +1463,59 @@ text-align: center;
   footer .row{
     text-align: left !important;
   }
+  .sale-all{
+    flex-direction: column;
+  }
+  .sale-timer{
+    width: 100%;
+  }
+  .daily-sale-img{
+    width: 100%;
+    margin:1rem 0 4rem 0 ;
+  }
+  .sale-all .sale-name h5{
+    font-size: 33px;
+  }
+  .best-choice{
+    flex-direction: column-reverse;
+  }
+  .best-choice .choice-info{
+    width: 100%;
+  }
+  .best-choice .img-video{
+    width: 100%;
+  }
+  .best-choice .choice-info h5{
+    font-size: 16px;
+    padding: 1rem 0;
+  }
+  .choice-info h2{
+    font-size: 27px;
+  }
+.new-arrival-all {
+  display: block;
+}
+.prod-imges{
+  width: 100%;
+  left: 6rem;
+}
+.prod-imges img:nth-child(2){
+  top: 18rem;
+  z-index: 100;
+  width: 75% !important;
+  left: 3rem !important; 
+}
+.prod-imges img:nth-child(3){
+  top: 30rem;
+  z-index: 1009;
+  left: -4rem !important; 
+}
+.prod-imges img{
+  width: 83% !important;
+}
+.new-arrival-product{
+  width: 100% !important;
+
+}
+
 }
