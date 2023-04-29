@@ -6,7 +6,7 @@
 body{
   margin-bottom: -17px;
 }
-
+ 
 /* Fonts */
 @font-face {
   font-family: 'MyCustomFont'; 
@@ -1471,7 +1471,6 @@ header .link:hover::before{
 .only-index{
   position: absolute;
   width: 100%;
-  overflow: auto;
   padding-top: 32px;
   padding-bottom: 10px;
 

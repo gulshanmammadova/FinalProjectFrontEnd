@@ -162,13 +162,59 @@
     
     </section>
 
+    
 <section id="single-product">
   <div class="quick-view container">
 <div class="quick-view-img">
   <span class="product-badge"></span>
-  <div id="featured" class="main-img"><img src="/assets/img/product/swiss-mechanical-wrist-watch.jpg" alt=""></div>
-  <div class="images"></div>
-</div>
+        <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+          <!-- slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure class="zoom" style="background-image: url(/assets/img/product/swiss-mechanical-wrist-watch.jpg);" onmousemove="zoom(event)">
+                <img src="/assets/img/product/swiss-mechanical-wrist-watch-300x300.jpg">
+              </figure>
+            </div>
+            <div class="carousel-item ">
+              <figure class="zoom" style="background-image: url(/assets/img/product/closeup-of-watch-1.jpg);" onmousemove="zoom(event)">
+                <img src="/assets/img/product/closeup-of-watch-1.jpg">
+              </figure>
+            </div>
+         
+         
+  
+           
+          </div>
+  
+          <!-- Left right -->
+          <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#custCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+  
+          <!-- Thumbnails -->
+          <ol class="carousel-indicators list-inline">
+            <li class="list-inline-item active">
+              <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel">
+                <img src="/assets/img/product/swiss-mechanical-wrist-watch-300x300.jpg" class="img-fluid">
+              </a>
+            </li>
+  
+            <li class="list-inline-item">
+              <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel">
+                <img src="/assets/img/product/closeup-of-watch-1.jpg" class="img-fluid">
+              </a>
+            </li>
+  
+           </ol>
+        </div>
+      
+  <!-- <figure class="zoom" style="background-image: url(/assets/img/product/swiss-mechanical-wrist-watch.jpg);" onmousemove="zoom(event)">
+    <img src="/assets/img/product/swiss-mechanical-wrist-watch-300x300.jpg">
+  </figure></div> -->
+  </div>
 <div class="quick-view-info">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -447,7 +493,8 @@
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
   <script src="/assets/js/main.js"></script>
-	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
