@@ -961,7 +961,7 @@ position: absolute;
     left: 1px;
     /* display: contents; */
     position: absolute;
-    z-index:999999;
+    z-index:9999999999999999999;
 }
 .account-dd{
   flex-direction: column;
@@ -1040,7 +1040,7 @@ transition: 0.5s;
   width: 373px;
   height: auto;
   display: none;
-  z-index: 9998;
+  z-index: 99;
   transition: 0.5s ease-out;
 
 }
@@ -1132,6 +1132,7 @@ header .link::before{
   content: ' ';
   position: absolute;
   top: -66px;
+  overflow: hidden;
     background-color:#2f78a7 ;
   width: 100%;
   height: 0px;
@@ -1143,8 +1144,9 @@ header .link {
   z-index: 10000;
 }
 header .link:hover::before{
-  height: 10rem;
+  height:128px;
   color: white;
+  overflow: hidden;
 }
     }
 
@@ -1161,6 +1163,12 @@ header .link:hover::before{
 
   .contact-bread-crump a{
     color: #2f78a7;
+ }
+ .basket{
+  z-index: 0;
+ }
+ .basket-content{
+  margin-right: 85px;
  }
  .contact-bread-crump h1{
    font-weight: bold;
@@ -1471,8 +1479,6 @@ header .link:hover::before{
 .only-index{
   position: absolute;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 10px;
 
   z-index: 1000000000;
 }
@@ -1725,7 +1731,26 @@ width: 50% !important;
   margin-bottom: 13rem !important;
 }
 .home-video video{
-  height: 34rem;
+  height: 27rem;
+}
+.best-choice {
+  padding: 3rem 10px;
+}
+.custom{
+    padding: 3rem 10px;
+}
+.feedback-info{
+  padding-right:0 ;
+}
+#feedback{
+  margin-top: -10rem;
+}
+.sale-timer .timer div {
+  background-color: #D72121;
+  border-radius: 5px 5px 5px 5px;
+  padding: -5px 8px 5px -10px;
+  color: white;
+  width: 85px;
 }
 .slider{    padding: 0;
   width: 66%;
