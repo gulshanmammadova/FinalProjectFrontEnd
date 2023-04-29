@@ -117,4 +117,19 @@ background-color: #FFFFFF;
   .checkout-cart{
     width: 100% !important;
   }
+  #cart-all img {
+    width: 128px;
+}
+.table th:nth-child(3){
+  padding: 0 5rem;
+}
+.table th:nth-child(4){
+  padding: 0 1rem;
+}
+.table th:nth-child(6){
+  padding: 0 0.5rem;
+}
+.table th:nth-child(7){
+  padding: 0 0.5rem;
+}
 }

@@ -68,7 +68,7 @@ transition: 0.3s;
 #who-we-are .info-about-us::before{
     content: ' ';
     position: absolute;
-    top: 139px;
+    top: 80px;
     left: -8px;
     border-radius: 8%;
     background-color: #2f78a7;
@@ -79,7 +79,7 @@ transition: 0.3s;
 #who-we-are .info-about-us::after{
      content: ' ';
     position: absolute;
-    bottom: 143px;
+    bottom: 4px;
     left: 28rem;
     border-radius: 8%;
     background-color: #2f78a7;
@@ -417,14 +417,15 @@ padding: 4px  25px;
     width: 25%;
     height: 360px;
 }
+.
 
 
 @media (max-width: 576px){
     .about-bread-crump{
-        width: 37%;
+        width: 42%;
     }
     .about-page-info h1{
-        width: 57%;
+        width: 66%;
     }
     .info-about-us{
         display: block !important;
@@ -509,5 +510,8 @@ flex-wrap: wrap;
 }
 .random-image img{
     width: 50% !important;
+}
+.slider img{
+    width: 90px !important;
 }
 }

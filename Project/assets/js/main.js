@@ -51,13 +51,23 @@ $('.slider').slick({
    autoplay: true,
   autoplaySpeed: 3000,
   arrows:false,
+  responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 $('.feedback-slider ').slick({
   infinite: true,
   autoplay: true,
   autoplaySpeed: 3000,
-  arrows:false
+  arrows:false,
+
 });
 // Timer
 $(document).ready(function(){
@@ -79,13 +89,7 @@ $(document).ready(function(){
   }, 1000);
 });
 // ZOOM
-$(function(){
-$(".xzoom, .xzoom-gallery").xzoom({
-  zoomWidth:400,
-  tint:"#333",
-  Xoffset:15
-})
-});
+
 // REVIEWS AND DESCRIPTION
 $(document).ready(function() {
   
@@ -99,3 +103,4 @@ $(document).ready(function() {
     // })
   });
 });
+// RESPONSIV SLIDER

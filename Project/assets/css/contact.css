@@ -1,112 +1,127 @@
-*{
+* {
   padding: 0;
-margin: 0;
-box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Fonts */
 @font-face {
-  font-family: 'MyCustomFont'; 
-  src: url('../fonts/Roboto-Bold.ttf') format('woff2'); 
- }
-
- header a{
   font-family: 'MyCustomFont';
- }
-/* form starting stylings ------------------------------- */
-.group 			  { 
-    position:relative; 
-    width: 40%;
-    flex-wrap:wrap;
-    margin: 10px -3px;
-  }
- 
-  input 				{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    background-color: #F3F3F3;;
-    width:300px;
-    border:none;
-    border-radius: 5%;
-    border-bottom:4px solid  #0F4C75;
-  }
-  input:focus 		{ outline:none; }
-  
-  /* LABEL ======================================= */
-  label
-  {
-    font-family: "Poppins", Sans-serif;
-    padding: 4px 8px;
-    color:#999; 
-    font-size:21px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    
-   
-  }
-  .foorms{
-    margin: 1px 77px;
-  }
-  textarea ~ label{
-    font-family: "Poppins", Sans-serif;
-    padding: 4px 8px;
-    color:#999; 
-    font-size:21px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-  }
-  .form-group{
-    position: relative;
-    width: 94%;
-  }
-  textarea {
-    padding-left: 13px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    background-color: #F3F3F3;
-    border-color: #0F4C75;
-    border-width: 0px 0px 5px 0px;
-    width: 100%;
-  }
-  form{
-    width: 79%;
-  }
- 
-  textarea:focus{
-    outline: none;
-  }
-  
-form button{
-color: #fff;
-font-family: "Poppins", Sans-serif;
-font-size: 15px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-color: #FFFFFF;
-background-color: #0F4C75;
-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
-border-style: solid;
-border-width: 2px 2px 2px 2px;
-border-color: #0F4C75;
-border-radius: 5px 5px 5px 5px;
-padding: 15px 30px 15px 30px;
-transition: 0.3s;
-margin-left:10px;
-  }
-  form button:hover{
-    color:#0F4C75 ;
-    background-color: #FFFFFF;
+  src: url('../fonts/Roboto-Bold.ttf') format('woff2');
+}
 
-  }
-  /* HIGHLIGHTER ================================== */
-  /* .highlight {
+header a {
+  font-family: 'MyCustomFont';
+}
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  width: 50% !important;
+  flex-wrap: wrap;
+  margin: 10px -3px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  background-color: #F3F3F3;
+  ;
+  border: none;
+  border-radius: 5%;
+  border-bottom: 4px solid #0F4C75;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  font-family: "Poppins", Sans-serif;
+  padding: 4px 8px;
+  color: #999;
+  font-size: 21px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+
+
+}
+
+.foorms {
+  margin: 1px 77px;
+}
+
+textarea~label {
+  font-family: "Poppins", Sans-serif;
+  padding: 4px 8px;
+  color: #999;
+  font-size: 21px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+}
+
+.form-group {
+  position: relative;
+  width: 94%;
+}
+
+textarea {
+  padding-left: 13px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: #F3F3F3;
+  border-color: #0F4C75;
+  border-width: 0px 0px 5px 0px;
+  width: 108%;
+}
+
+form {
+  width: 79%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+form button {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  background-color: #0F4C75;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #0F4C75;
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+  margin-left: 10px;
+  width: 97%;
+  margin-bottom: 1.5rem;
+}
+
+.map iframe{
+  width: 100%;
+}
+form button:hover {
+  color: #0F4C75;
+  background-color: #FFFFFF;
+
+}
+
+/* HIGHLIGHTER ================================== */
+/* .highlight {
     position:absolute;
     height:60%; 
     width:100px; 
@@ -116,15 +131,15 @@ margin-left:10px;
     opacity:0.5;
   }
    */
-  /* active state */
-  /* input:focus ~ .highlight {
+/* active state */
+/* input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
   }
    */
-  /* ANIMATIONS ================ */
-  /* @-webkit-keyframes inputHighlighter {
+/* ANIMATIONS ================ */
+/* @-webkit-keyframes inputHighlighter {
       from { background:#5264AE; }
     to 	{ width:0; background:transparent; }
   }
@@ -136,12 +151,13 @@ margin-left:10px;
       from { background:#5264AE; }
     to 	{ width:0; background:transparent; }
   } */
-  .contact-page-info{
-    background-image: url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
-    background-position: center;
-    position: relative;
+.contact-page-info {
+  background-image: url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
+  background-position: center;
+  position: relative;
 }
-.contact-page-info::after{
+
+.contact-page-info::after {
   content: ' ';
   position: absolute;
   background-color: black;
@@ -152,62 +168,71 @@ margin-left:10px;
   right: 0;
   z-index: 100;
 }
-.our-info
-{
-  margin:4rem 0 auto;
-align-items: center;
-display: flex;
-justify-content: space-evenly;
+
+.our-info {
+  margin: 4rem 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
-.our-info p
-{
-  color:#6E6E6E;
+
+.our-info p {
+  color: #6E6E6E;
 }
-.get-in-touch .title h5
-{
+
+.get-in-touch .title h5 {
   color: #2f78a7;
   letter-spacing: 2px;
 }
-.our-info i{
-font-size: 52px;
-color: #1B8AD0;
-align-items: center;
+
+.our-info i {
+  font-size: 52px;
+  color: #1B8AD0;
+  align-items: center;
 }
-.our-info span
-{
+
+.our-info span {
   display: block;
   align-items: center;
 }
-.contact-info
-{
-  display: flex;
-  justify-content: space-between;
-  margin:4rem auto;
-}
- .contact-bread-crump{
-    width: 30%;
-    position: sticky;
-    z-index: 10009;
-    padding: 7rem 0;
 
-text-align: center;  }
- .contact-bread-crump a{
-    color: #2f78a7;
- }
- .contact-bread-crump h1{
-   font-weight: bold;
-   font-size: 65px;
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
 }
-.contact-info .map-iframe{
+
+.contact-bread-crump {
+  width: 30%;
+  position: sticky;
+  z-index: 10009;
+  padding: 7rem 0;
+
+  text-align: center;
+}
+
+.contact-bread-crump a {
+  color: #2f78a7;
+}
+
+.contact-bread-crump h1 {
+  font-weight: bold;
+  font-size: 65px;
+}
+
+.contact-info .map-iframe {
   height: 350px;
-  
+
 }
-form{
+
+form {
   display: flex;
   justify-content: space-between;
 }
-.our-phone, .our-office, .our-contact
-{
+
+.our-phone,
+.our-office,
+.our-contact {
   padding: 25px 25px 25px 25px;
   border-style: solid;
   border-width: 0px 0px 5px 0px;
@@ -217,76 +242,70 @@ form{
   height: 230px;
   width: 24%;
 }
+
 /* iconda m-auto islemir */
 /* OUR-INFO"s icon */
-.our-contact i{
+.our-contact i {
   margin-left: 50%;
   transform: translateX(-50%);
   font-size: 75px;
 }
-.our-office i{
+
+.our-office i {
   margin-left: 50%;
   transform: translateX(-50%);
   font-size: 75px;
 }
-.our-phone i{
+
+.our-phone i {
   margin-left: 50%;
   transform: translateX(-50%);
   font-size: 75px;
 }
-.our-phone p{
+
+.our-phone p {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.our-office p{
+
+.our-office p {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-.our-info p{
+
+.our-info p {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-/* 
 
-
-
-I
-S
-L
-E
-M
-E
-D
-I
-
-
-
-
-*/
-.our-info p:first-child{
+.our-info p:first-child {
   color: black;
   font-size: 33px;
 }
+
 .zoom-in {
   width: 24%;
 }
-.tel{
+
+.tel {
   margin-left: 50%;
   transform: translateX(-50%);
   width: 56%;
 }
-.address{
+
+.address {
   margin-left: 50%;
   transform: translateX(-50%);
   width: 76%;
 }
 
-.get-in-touch .title{
+.get-in-touch .title {
   margin: 5rem auto;
   text-align: center;
   width: 50%;
 }
-.get-in-touch .title h2{
+
+.get-in-touch .title h2 {
   color: #1B262C;
   font-weight: bold;
   font-family: "Poppins", Sans-serif;
@@ -298,11 +317,12 @@ I
   position: relative;
   z-index: 1;
 }
-.get-in-touch .title h2::before{
+
+.get-in-touch .title h2::before {
   content: '';
   width: 65%;
   height: 20px;
-  background-color:#3282B8 ;
+  background-color: #3282B8;
   bottom: 6px;
   left: 8rem;
   display: block;
@@ -310,11 +330,78 @@ I
   z-index: -10000000;
 
 }
-.get-in-touch .title h5{
+
+.get-in-touch .title h5 {
   color: #3282B8;
   font-family: "Poppins", Sans-serif;
   font-size: 20px;
   font-weight: 800;
   line-height: 1.3em;
   letter-spacing: 1.5px;
+}
+input{
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    width: 100%;
+    padding: 0;
+  }
+
+  .title h2 {
+    font-size: 20px !important;
+  }
+
+  .title h5 {
+    font-size: 19px;
+  }
+
+  .our-info {
+    flex-direction: column;
+  }
+
+  .our-office {
+    width: 90%;
+    text-align: center;
+  }
+
+  .our-phone {
+    text-align: center;
+
+    width: 90%;
+  }
+
+  .our-contact {
+    text-align: center;
+    margin: 2rem 0;
+    width: 90%;
+  }
+
+  .our-office i {
+    margin-left: 50%;
+    transform: translateX(-121%);
+  }
+
+  .our-contact i {
+    margin-left: 50%;
+    transform: translateX(-121%);
+  }
+
+  .our-phone i {
+    margin-left: 50%;
+    transform: translateX(-121%);
+  }
+  .contact-info{
+flex-direction: column-reverse;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .group{
+    width: 100% !important;
+  }
+  footer .row{
+    text-align: left !important;
+  }
 }

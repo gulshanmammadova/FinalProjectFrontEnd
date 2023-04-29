@@ -168,6 +168,9 @@ text-decoration: underline;
        align-items: center;
        margin: 0rem auto;
     }
+    .card{
+        height: 30rem !important;
+    }
 
     .left-shop-part{
         width: 100%;
