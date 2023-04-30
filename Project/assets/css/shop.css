@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shop-page-info{
+    background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+.shop-page-info::after{
+    position: absolute;
+    content: ' ';
+    top: 0;bottom: 0;right: 0;left: 0;
+    background-color: black;
+    opacity: 0.7;
+    
+}
+.shop-bread-crump{
+    width: 30%;
+    padding: 7rem 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    z-index:999;
+ }
+ .shop-bread-crump a{
+    color: #2f78a7;
+
+ }
+ .shop-page-info h1{
+   font-weight: bold;
+   font-size: 65px;
+   width: 45%;
+    margin: 0 auto;
+    padding: 0 0 7rem 0rem;
+    position: sticky;
+    z-index:999;
+}
+.input-group-append span{
+    font-size: 23px;
+    background-color: #2f78a7;
+    color: white;
+}
+.category{
+    margin: 2rem auto;
+}
+.category h4{
+    color: #1B262C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.category a{
+    color: #6E6E6E;
+    align-self: center;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    padding-left: 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+}
+.pagination nav{
+    background-color: white !important;    
+}
+
+.pagination nav a{
+    color: #1B262C !important;
+    padding: 12px 14px;
+}
+.shop-prod{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-shop-part{
+    width: 75%;
+}
+.right-shop-part{
+    width: 25%;
+}
+.card-body {
+    text-align: center;
+}
+.watch-card{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 35px auto;
+}
+.watch-card .card{
+    width: 30%;
+    margin: 30px auto;
+}
+.card-body h5{
+
+    color: #1B262C !important;
+    padding: 0.5em 0;
+    margin: 0;
+    color: #1B262C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.card-body a{
+    color: #FFFFFF;
+    background-color: #0F4C75;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 30px 15px 30px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: "Poppins", Sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card-body:hover a{
+color: #0F4C75;
+background-color: #FFFFFF;
+border:1.5px solid #0F4C75;
+
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.card-body p{
+       padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+.card{
+        width: 18rem;
+    height: 32rem;
+}
+.card-body .discounted-price{
+    color: #3282BF;
+    font-weight: bold;
+      font-family: "Poppins", Sans-serif;
+text-decoration: underline;
+}
+.card-body .badge{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background-color: #d72121;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+@media only screen and (max-width: 576px) 
+{
+    .shop-prod{
+        display: block;
+       align-items: center;
+       margin: 0rem auto;
+    }
+    .card{
+        height: 30rem !important;
+    }
+
+    .left-shop-part{
+        width: 100%;
+    }
+    .right-shop-part {
+        width: 100%;
+        display: block;
+    }
+    .shop-bread-crump{
+        width: 50%;
+    }
+}

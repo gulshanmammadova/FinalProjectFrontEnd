@@ -24,51 +24,6 @@ $(document).ready(function() {
     })
   });
 });
-// COUNT VE PRICE ELAQESI
-
-$(document).ready(function() {
-  $('tr').each(function() {
-    var count = $(this).find('.count-input').val();
-    var price = $(this).find('.price-column').text().replace('$', '');
-    var total = count * price;
-    $(this).find('.total-price-column').text('$' + total);
-  });
-   $('.count-input').on('change', function() {
-    $('tr').each(function() {
-      var count = $(this).find('.count-input').val();
-      var price = $(this).find('.price-column').text().replace('$', '');
-      var total = count * price;
-      $(this).find('.total-price-column').text('$' + total);
-    });
-  });
-});
-// CARUSEL
-  
-$('.slider').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 4, 
-   autoplay: true,
-  autoplaySpeed: 3000,
-  arrows:false,
-  responsive: [
-    {
-      breakpoint: 590,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-});
-
-$('.feedback-slider ').slick({
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  arrows:false,
-
-});
 // Timer
 $(document).ready(function(){
   var countDownDate = new Date("May 16, 2023 00:23:59").getTime(); // hedef tarihi ayarla
@@ -88,8 +43,6 @@ $(document).ready(function(){
     $('.timer').addClass('d-none')    }
   }, 1000);
 });
-// ZOOM
-
 // REVIEWS AND DESCRIPTION
 $(document).ready(function() {
   
@@ -113,3 +66,53 @@ function zoom(e){
   zoomer.style.backgroundPosition = x + '% ' + y + '%';
 }
 //Single deki img ler
+
+// COUNT VE PRICE ELAQESI
+
+$(document).ready(function() {
+  $('tr').each(function() {
+    var count = $(this).find('.count-input').val();
+    var price = $(this).find('.price-column').text().replace('$', '');
+    var total = count * price;
+    $(this).find('.total-price-column').text('$' + total);
+  });
+   $('.count-input').on('change', function() {
+    $('tr').each(function() {
+      var count = $(this).find('.count-input').val();
+      var price = $(this).find('.price-column').text().replace('$', '');
+      var total = count * price;
+      $(this).find('.total-price-column').text('$' + total);
+    });
+  });
+});
+// CARUSEL
+$('.feedback-slider ').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows:false,
+
+}); 
+$('.slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4, 
+   autoplay: true,
+  autoplaySpeed: 3000,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+
+
+// ZOOM
+
+

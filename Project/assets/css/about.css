@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-page-info{
+    background-image:url("https://kit.wirastudio.co/arloji/wp-content/uploads/sites/6/2021/06/watch-for-sale-1.jpg");
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+.about-page-info::after{
+    content: ' ';
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+}
+.about-bread-crump{
+    width: 30%;
+    z-index: 993;
+    position: sticky;
+    padding: 7rem 1.5rem 0;
+    text-align: center;
+ }
+ .about-bread-crump a{
+    color: #2f78a7;
+
+ }
+ .about-page-info h1{
+   font-weight: bold;
+   font-size: 65px;
+   
+   z-index: 993;
+   position: sticky;
+   width: 45%;
+    margin: 0 auto;
+    padding: 0 0 7rem 0rem;
+}
+#who-we-are .info-about-us .img-us{
+  
+transition: 0.3s;
+
+ }
+.info-about-us .img-us img{
+    width: 590px;
+    height: 701px;     width: 608px;
+    margin-top: 5rem ;
+     border-style: solid;
+     border-width: 10px 10px 10px 10px;
+     border-color: #FFFFFF;
+     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+     /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
+    border-radius: 1%;
+}
+#who-we-are .info-about-us{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+#who-we-are .info-about-us::before{
+    content: ' ';
+    position: absolute;
+    top: 80px;
+    left: -8px;
+    border-radius: 8%;
+    background-color: #2f78a7;
+    width: 189px;
+    z-index: -2999992;
+    height: 189px;
+}
+#who-we-are .info-about-us::after{
+     content: ' ';
+    position: absolute;
+    bottom: 4px;
+    left: 28rem;
+    border-radius: 8%;
+    background-color: #2f78a7;
+    width: 189px;
+    z-index: -2999992;
+    height: 189px;
+  
+}
+.info-about-us .img-us:hover {
+    transform: scale(1.1);
+}
+.info-about-us .info-us{
+    margin: 5rem 0rem 11rem 3rem;
+    position: relative;
+    z-index: 100000;
+
+}
+.info-about-us .info-us h5{
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    color: #3282B8;
+    padding: 2rem 0;
+}
+.info-about-us .info-us h2{
+    color: #1B262C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.info-about-us .info-us p{
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-left: 0;
+}
+li i{
+    color: #3282B8;
+    font-size: 20px;
+    padding: 8px;
+}
+li span{
+    font-size: 17px;
+    color: #6E6E6E;
+}
+.info-about-us .info-us::before{
+    content: 'o';
+    color: #2f78a7;
+    opacity: 0.2;
+    top: -71px;
+    left: 15px;
+    z-index: -77;
+    position: absolute;
+    font-size: 254px;
+    font-weight: bold;
+
+}
+#main-slogan .motto h1{
+    font-family: "Poppins", Sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    color: white;
+    padding:8rem 0rem ;
+    text-align: center;
+} 
+#main-slogan {
+    background-color: #0F4C75;
+    margin: 5rem 0px;
+}
+#main-slogan .motto{
+    position: relative;
+    z-index: 1;
+}
+#main-slogan .motto i{
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    font-size: 212px;
+    color: white;
+}
+.our-teammate{
+    margin: 4rem auto;
+}
+
+.team-info{
+    text-align: center;
+}
+.team-info h5{
+    color: #3282B8;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.team-info h2{
+    color: #1B262C;
+    font-weight: bold;
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 1;
+}
+.team-info h2::before{
+    content: '';
+    width: 31%;
+    height: 20px;
+    background-color:#3282B8 ;
+    bottom: 6px;
+    left: 27.5rem;
+    display: block;
+    position: absolute;
+    z-index: -10000000;
+
+}
+.team .single-worker{
+    position: relative;
+}
+.single-worker{
+ 
+    width: 30%;
+    margin-top: 6rem;
+}
+.worker-info h5{
+    color: #1B262C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.worker-photo{
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #FFFFFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.worker-photo img{
+    width: 100%;
+}
+.worker-info p{
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.worker-info h5{
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    color: #1B262C;
+}
+.worker-info{
+bottom: -26px;
+position: absolute;
+box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
+padding: 4px  25px;
+    margin: -1.5rem auto;
+    text-align: center;
+    z-index: 100;
+    width: 75%;
+    background-color: #FFFFFF;
+}
+.worker-info i{
+    font-size: 24px;
+    color: #2f78a7;
+    padding: 3px;
+    margin: 3px auto;
+}
+#our-team{
+    padding: 2rem 0;
+}
+.craft{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    position: relative;
+    
+}
+.custom-info{
+    width: 51%;
+    position: relative;
+    z-index: 1000000;
+}
+.custom-info h5{
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    color: #3282B8;
+    padding: 2rem 0;
+}
+.custom-info  h2{
+    color: #1B262C;
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+}
+.custom-info  p{
+    color: #6E6E6E;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.custom-info::before{
+    content: 'o';
+    color: #2f78a7;
+    opacity: 0.2;
+    top: -71px;
+    left: 15px;
+    position: absolute;
+    z-index: -2;
+    font-size: 254px;
+    font-weight: bold;
+
+}
+.custom-info a{
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    background-color: #0F4C75;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    border-width: 2px 2px 2px 2px;
+    border: solid;
+    border-color: #0F4C75;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px 30px 15px 30px;
+    transition: 0.3s;
+}
+.custom-info a:hover{
+    color: #0F4C75;
+    background-color: white;
+    border-color: #0F4C75;
+}
+.custom-info .custom-equality ul{
+    padding-bottom: 1.5rem;
+}
+.img-video{
+    position: relative;
+    width: 48%;
+}
+.img-video::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5; 
+}
+.img-video img{
+    width: 100%;
+}
+#insta-address .insta h1{
+    font-family: "Poppins", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.3em;
+    letter-spacing: 1.5px;
+    color: white;
+    text-align: center;
+    padding-bottom:2rem;
+} 
+#insta-address {
+    background-color: #0F4C75;
+    margin-top: 5rem ;
+    padding:10rem 0 ;
+    text-align: center;
+}
+#insta-address .insta a{
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    background-color: #FFFFFF;
+    color: #0F4C75;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    border-width: 2px 2px 2px 2px;
+    border: solid;
+    border-color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 21px 30px 21px 30px;
+    transition: 0.3s;
+}
+
+#insta-address .insta a:hover{
+    background-color: #0F4C75;
+    color: white;
+    border-color: #FFFFFF;
+}
+.random-image{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.random-image img{
+    width: 25%;
+    height: 360px;
+}
+
+@media (max-width: 576px){
+    .about-bread-crump{
+        width: 42%;
+    }
+    .about-page-info h1{
+        width: 66%;
+    }
+    .info-about-us{
+        display: block !important;
+        margin: 0rem auto;
+    }
+   
+    .info-about-us .img-us img {
+        width: 100% !important;
+        height: 596px !important;
+    }
+    #who-we-are .info-about-us::before {
+        top: 60px;
+    }
+    #who-we-are .info-about-us::after {
+        bottom: 601px;
+        left: 23rem;
+    }
+    .info-us{
+        margin: 0 auto;
+    }
+    .info-us h2{
+        font-size: 29px !important;
+    }
+    p, span{
+        font-size: 20px !important;
+    }
+    #main-slogan .motto h1 {
+        font-size: 32px;
+    }
+    #main-slogan{
+        
+    margin: -8rem 0px;
+    }
+.our-teammate{
+    display: block;
+
+}
+.team{
+    display: block  !important ;
+}
+#our-team {
+    padding: 8rem 0;
+}
+ h2{
+    font-size: 29px !important;
+}
+.single-worker {
+    width: 100%;
+    margin-top: 4rem;
+}
+.team-info h2::before{
+    width: 55%;
+    height: 19px;
+    bottom: 6px;
+    left: 7.5rem;
+}
+.craft{
+flex-direction: column-reverse;
+}
+.img-video{
+    width: 100% !important;
+    margin: 3rem auto;
+    height: 21rem;
+}
+.custom-info{
+    width: 100%;
+}
+.insta h1{
+        margin-bottom: -11px;
+    font-size: 30px !important;
+}
+#insta-address{
+    padding-bottom:6rem !important;
+}
+.insta a{
+    padding: 9px 4px 9px 4px !important;
+    font-size: 16px;
+}
+.random-image{
+display: flex;
+flex-wrap: wrap;
+}
+.random-image img{
+    width: 50% !important;
+}
+.slider img{
+    width: 90px !important;
+}
+}
