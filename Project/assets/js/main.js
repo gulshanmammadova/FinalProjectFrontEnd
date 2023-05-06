@@ -93,6 +93,23 @@ $('.feedback-slider ').slick({
   arrows:false,
 
 }); 
+$('.index-slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4, 
+   autoplay: true,
+  autoplaySpeed: 3000,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 590,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 $('.slider').slick({
   infinite: true,
   slidesToShow: 4,
@@ -110,7 +127,6 @@ $('.slider').slick({
     },
   ],
 });
-
 
 
 // ZOOM
